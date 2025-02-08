@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yuji+Mai&display=swap");
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  font-family: "Roboto", serif;
+}
+
+
+
+li .dropdown-item:hover {
+  background-color: #b7c99d;
+}
+
+
+img {
+  height: 500px;
+  border-radius: 15px;
+}
+
+.container {
+  margin-top: 62px;
+}
+
+#home {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+
+.line1 {
+  display: block;
+  width: 3px;
+  height: 650px;
+  background-color: rgb(100, 76, 76);
+  margin-left: 30px;
+  margin-right: 140px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+}
+
+.form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-top: 22px;
+}
+
+.nation {
+  margin-bottom: 2px;
+}
+
+.number {
+  display: flex;
+}
+
+.country {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.in {
+  margin-left: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.main img {
+  width: 650px;
+  height: 400px;
+  margin-left: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.headingabout {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 38%;
+}
+.headingabout h1 {
+  margin-left: 60px;
+}
+
+.paragraph {
+  margin-top: 17px;
+  text-align: center;
+  margin: 50px;
+  font-size: large;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 58px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
