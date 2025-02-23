@@ -13,13 +13,17 @@
     />
   </head>
   <body>
-    <div class="navbar navbar-expand-lg bg-success p-4">
+    <div class="navbar navbar-expand-lg bg-success p-4 ">
       <div class="container-fluid justify-content-between">
         <div>
           <a class="navbar-brand text-white fs-3 fw-bold" href="#">TRECTUTOR</a>
         </div>
-        <div class="info">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 fw-bold gap-2">
+        <button class="navbar-toggler navbar-toggler-icon w-10" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+        </button>
+
+        </button>
+        <div class="info "  class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 fs-5 fw-bold gap-2">
             <li class="nav-item">
               <a class="nav-link active text-white" aria-current="page" href="#"
                 >Home</a
@@ -56,15 +60,16 @@
               >
             </li>
           </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-1 fs-5 "
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
         </div>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-1 fs-5"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </form>
+        
       </div>
     </div>
 
@@ -82,7 +87,7 @@
               class="d-block w-100 rounded-4"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-block d-md-none">
               <h5>Personalized Itineraries</h5>
               <p>
                 Tailor-made travel plans designed to match your preferences and
@@ -96,7 +101,7 @@
               class="d-block w-100 rounded-4"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-block d-md-none">
               <h5>Exclusive Deals & Discounts</h5>
               <p>
                 Special offers on flights, hotels, and tour packages for the
@@ -110,7 +115,7 @@
               class="d-block w-100 rounded-4"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-block d-md-none">
               <h5>24/7 Customer Support</h5>
               <p>
                 Reliable assistance anytime, anywhere for a hassle-free journey.
@@ -123,7 +128,7 @@
               class="d-block w-100 rounded-4"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-block d-md-none">
               <h5>Luxury & Adventure Experiences</h5>
               <p>
                 From serene getaways to thrilling adventures, we curate
@@ -137,11 +142,11 @@
               class="d-block w-100 rounded-4"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            
+            <div class="carousel-caption d-block d-md-none ">
               <h5>Visa & Travel Assistance</h5>
               <p>
-                End-to-end support for visa applications, travel insurance, and
-                documentation.
+              Support for visa applications, travel insurance, and documentation.
               </p>
             </div>
           </div>
