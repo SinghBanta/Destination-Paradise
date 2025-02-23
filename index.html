@@ -46,9 +46,12 @@
                 <li><a class="dropdown-item" href="#">More</a></li>
               </ul>
             </li>
+            <li class="nav-item"></li>
             <li class="nav-item">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#about"
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#about"
                 >About</a
               >
             </li>
@@ -56,7 +59,7 @@
         </div>
         <form class="d-flex" role="search">
           <input
-            class="form-control me-1  fs-5"
+            class="form-control me-1 fs-5"
             type="search"
             placeholder="Search"
             aria-label="Search"
@@ -69,37 +72,78 @@
       <!-- crousal -->
       <div
         id="carouselExampleInterval"
-        class="carousel slide""
+        class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner rounded-4 ">
-            <div class="carousel-item active" data-bs-interval="3000">
+        <div class="carousel-inner rounded-4">
+          <div class="carousel-item active" data-bs-interval="3000">
             <img
-              src="https://images.pexels.com/photos/532263/pexels-photo-532263.jpeg?auto=compress&cs=tinysrgb&w=1000"
+              src="https://images.pexels.com/photos/3826682/pexels-photo-3826682.jpeg?auto=compress&cs=tinysrgb&w=1000"
               class="d-block w-100 rounded-4"
               alt="..."
             />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Personalized Itineraries</h5>
+              <p>
+                Tailor-made travel plans designed to match your preferences and
+                budget.
+              </p>
             </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-              src="https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&w=1000"
-              class="d-block w-100 rounded-4"
-              alt="..."
-            />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img
-              src="https://images.pexels.com/photos/533769/pexels-photo-533769.jpeg?auto=compress&cs=tinysrgb&w=1000"
+              src="https://images.pexels.com/photos/7957750/pexels-photo-7957750.jpeg?auto=compress&cs=tinysrgb&w=1000"
               class="d-block w-100 rounded-4"
               alt="..."
             />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Exclusive Deals & Discounts</h5>
+              <p>
+                Special offers on flights, hotels, and tour packages for the
+                best value.
+              </p>
+            </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img
-              src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1000"
+              src="https://images.pexels.com/photos/5453899/pexels-photo-5453899.jpeg?auto=compress&cs=tinysrgb&w=1000"
               class="d-block w-100 rounded-4"
               alt="..."
             />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>24/7 Customer Support</h5>
+              <p>
+                Reliable assistance anytime, anywhere for a hassle-free journey.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="https://images.pexels.com/photos/3477641/pexels-photo-3477641.jpeg?auto=compress&cs=tinysrgb&w=1000"
+              class="d-block w-100 rounded-4"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Luxury & Adventure Experiences</h5>
+              <p>
+                From serene getaways to thrilling adventures, we curate
+                unforgettable trips.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+              src="https://images.pexels.com/photos/5137969/pexels-photo-5137969.jpeg?auto=compress&cs=tinysrgb&w=1000"
+              class="d-block w-100 rounded-4"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Visa & Travel Assistance</h5>
+              <p>
+                End-to-end support for visa applications, travel insurance, and
+                documentation.
+              </p>
+            </div>
           </div>
         </div>
         <button
@@ -124,92 +168,122 @@
 
       <div class="home" id="home">
         <div class="home-form-section">
-          <h2 class="form-title fs-1 ">Book Your Dream Vacation</h2>
+          <h2 class="form-title fs-1">Book Your Dream Vacation</h2>
           <form id="bookingForm">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="Name" placeholder="Enter your name" required="">
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Enter your name"
+                required=""
+              />
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="text" id="email" name="email" placeholder="Enter your email" required="">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required=""
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="text-gray-600 text-sm"> Phone number </label>
+              <div class="number">
+                <div class="nation">
+                  <select class="form-select" id="countryCode">
+                    <option>IN</option>
+                    <option>US</option>
+                    <option>UK</option>
+                  </select>
+                </div>
+                <input
+                  type="number"
+                  id="phone"
+                  placeholder="+91 555 000 0000"
+                  class="in"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="birthday">Birthdate</label>
+              <input id="birthday" name="date" type="date" required="" />
             </div>
             
             <div class="form-group">
-              <label class="text-gray-600 text-sm">
-                  Phone number
-              </label>
-              <div class="number">
-                  <div class="nation">
-                      <select class="form-select" id="countryCode">
-                          <option>IN</option>
-                          <option>US</option>
-                          <option>UK</option>
-                      </select>
-                  </div>
-                    <input type="number" id="phone" placeholder="+91 (555) 000-000" class="in"/>
-              </div>
-          </div>
-          
-
-            <div class="form-group">
-            <label for="birthday">Birthdate</label>
-            <input id="birthday" name="date" type="date" required="">
-          </div>
-          <div class="form-group">
-            <label for="date">Marital Status</label>
-          <select class="form-select form-select-lg mb-3 border-black fs-6 " aria-label="Large select example">
-             
-            <option selected>Single</option>
-            <option value="1">Married</option>
-           
-          
-          </select>
-
-          </div>
-          <div class="col-auto position-relative">
-            <button type="submit" class="btn bg-success mb-3 mt-5 w-100 fs-4 position-absolute start-50 translate-middle text-white fw-bold">SUBMIT</button>
-          </div>
-
+              <label for="date">Marital Status</label>
+              <select
+                class="form-select form-select-lg mb-3 border-black fs-6"
+                aria-label="Large select example"
+              >
+                <option selected>Single</option>
+                <option value="1">Married</option>
+              </select>
+            </div>
+            <div class="col-auto position-relative">
+              <button
+                type="submit"
+                class="btn bg-success mb-3 mt-5 w-100 fs-4 position-absolute start-50 translate-middle text-white fw-bold"
+              >
+                SUBMIT
+              </button>
+            </div>
           </form>
         </div>
         <div class="line1">
           <hr />
         </div>
         <div class="home-packages-section">
-          <h2 class="section-title fs-1 ">Explore Our Travel Packages</h2>
+          <h2 class="section-title fs-1">Explore Our Travel Packages</h2>
           <div class="packages-container" id="packages-container">
-            
             <div class="products">
-                <div class="card">
-                  <img src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_640.jpg"  alt="Beach Getaway">
-                  <div class="card-body">
-                    <h5 class="card-title">Beach Getaway</h5>
-                    <p class="card-text">Enjoy a relaxing time at the sunny beaches of Bali. Inclusive of hotel stay and guided tours.</p>
-                  </div>
+              <div class="card">
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_640.jpg"
+                  alt="Beach Getaway"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Beach Getaway</h5>
+                  <p class="card-text">
+                    Enjoy a relaxing time at the sunny beaches of Bali.
+                    Inclusive of hotel stay and guided tours.
+                  </p>
                 </div>
-              
-              
-                <div class="card">
-                  <img src="https://cdn.pixabay.com/photo/2016/11/14/03/26/cliff-1822484_640.jpg" alt="Mountain Adventure">
-                  <div class="card-body">
-                    <h5 class="card-title">Mountain Adventure</h5>
-                    <p class="card-text">Explore the thrilling trails of the Himalayas. Package includes hiking, camping, and meals.</p>
-                  </div>
-                </div>
-              
-              
-                <div class="card">
-                  <img src="https://cdn.pixabay.com/photo/2017/03/29/15/18/tianjin-2185510_1280.jpg" alt="City Life Experience">
-                  <div class="card-body">
-                    <h5 class="card-title">City Life Experience</h5>
-                    <p class="card-text">Discover the vibrant life of New York City. Comes with city tours and museum passes.</p>
-                  </div>
-                </div>
-              
-            </div>
-            
+              </div>
 
+              <div class="card">
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/11/14/03/26/cliff-1822484_640.jpg"
+                  alt="Mountain Adventure"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mountain Adventure</h5>
+                  <p class="card-text">
+                    Explore the thrilling trails of the Himalayas. Package
+                    includes hiking, camping, and meals.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  src="https://cdn.pixabay.com/photo/2017/03/29/15/18/tianjin-2185510_1280.jpg"
+                  alt="City Life Experience"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">City Life Experience</h5>
+                  <p class="card-text">
+                    Discover the vibrant life of New York City. Comes with city
+                    tours and museum passes.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -220,19 +294,27 @@
     <div class="abouts" id="about">
       <div class="header"><h1>About Us</h1></div>
       <div class="main">
-      <div><img src="https://images.pexels.com/photos/1198835/pexels-photo-1198835.jpeg?auto=compress&cs=tinysrgb&w=1000"></div>
-      <div class="headingabout"><h1>Welcome to Destination Paradise</h1>
-      <p class="paragraph">Picture yourself strolling along pristine shores, basking in golden sunsets, or exploring vibrant landscapes teeming with life. This is where stress melts away and curiosity takes over, inviting you to discover hidden treasures and savor unforgettable experiences. </p>
-      
-      <button class="cta">
-        <span>Learn More</span>
-      </button>
-    </div>
-    </div>
-    </div>
-    <br><br>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1198835/pexels-photo-1198835.jpeg?auto=compress&cs=tinysrgb&w=1000"
+          />
+        </div>
+        <div class="headingabout">
+          <h1>Welcome to Destination Paradise</h1>
+          <p class="paragraph">
+            Picture yourself strolling along pristine shores, basking in golden
+            sunsets, or exploring vibrant landscapes teeming with life. This is
+            where stress melts away and curiosity takes over, inviting you to
+            discover hidden treasures and savor unforgettable experiences.
+          </p>
 
-    
+          <button class="cta">
+            <span>Learn More</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <br /><br />
 
     <script src="script.js"></script>
     <script
@@ -240,6 +322,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    
   </body>
 </html>
