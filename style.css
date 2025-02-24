@@ -113,8 +113,8 @@ img {
 }
 
 .headingabout {
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 10px;
+  margin-left: 40px;
   width: 38%;
 }
 .headingabout h1 {
@@ -124,7 +124,10 @@ img {
 
 .home-packages-section h2{
   margin-left:80px;
+  
 }
+
+
 
 .paragraph {
   margin-top: 10px;
@@ -137,8 +140,8 @@ img {
 .cta {
   position: relative;
   /* margin: auto; */
-  margin-left: 300px;
-  margin-bottom: 50px;
+  margin-left: 220px;
+  margin-top:0px;
   padding: 12px 18px;
   transition: all 0.2s ease;
   border: none;
