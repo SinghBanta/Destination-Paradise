@@ -58,8 +58,10 @@
           <input
             class="form-control me-1  fs-5"
             type="search"
+            id="search_input"
             placeholder="Search"
             aria-label="Search"
+            onkeyup="search()"
           />
         </form>
       </div>
@@ -216,7 +218,7 @@
           <h2 class="section-title fs-1 ">Explore Our Travel Packages</h2>
           <div class="packages-container" id="packages-container">
             
-            <div class="products">
+            <div class="products" id="products">
                 <div class="card">
                   <img src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_640.jpg"  alt="Beach Getaway">
                   <div class="card-body">
